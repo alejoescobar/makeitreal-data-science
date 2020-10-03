@@ -10,21 +10,22 @@ print('Average: ', average(1, 2))
 # 2 Exponencial
 
 def tenth_power(num):
-  return 10 ** num
+  return num ** 10
 
 print('Tenth Power: ', tenth_power(3))
 
-# 3 Bond
+# 3 Bond, James Bond
 
 def introduction(first_name, last_name):
-  return last_name + ', ' + first_name + ' ' + last_name
+  text = last_name + ', ' + first_name + ' ' + last_name # Es keyword en python?
+  return text
 
 print('Introduction: ', introduction('Alejo', 'Escobar'))
 
 # 4 Raíz Cuadrada
 
 def square_root(num):
-  return num ** (.5)
+  return num ** .5
 
 print('Raíz cuadrada: ', square_root(4))
 
@@ -33,24 +34,28 @@ print('Raíz cuadrada: ', square_root(4))
 def tip(total, percentage):
   return total * (percentage/100)
 
-print('Porcentaje de ganancias: ', tip(1000, 10))
+print('Tip: ', tip(1000, 10))
 
 # 6 Porcentaje de ganancias
 
 def win_percentage(wins, loses):
   total_games = wins + loses
-  return wins / total_games
+  return str((wins / total_games) * 100) + "%"
 
 print('Porcentaje de ganancias: ', win_percentage(7, 3))
 
 # 7 Primeros tres múltiples
 
 def first_three_multiples(num):
-  multiple = ""
-  for i in range(3):
-    multiple = (i + 1) * num
-    print(multiple)
-  return multiple
+  # multiple = ""
+  # for i in range(3):
+  #   multiple = (i + 1) * num
+  #   print(multiple)
+  print(num * 1)
+  print(num * 2)
+  last_multiple = num * 3
+  print(last_multiple)
+  return last_multiple
 
 print('Primeros tres múltiples: ', first_three_multiples(7))
 
@@ -58,7 +63,8 @@ print('Primeros tres múltiples: ', first_three_multiples(7))
 
 def dog_years(name, age):
   dog_age = age * 7
-  return name + ", tu tienes " + str(dog_age) + " años en años de perro"
+  text = name + ", tu tienes " + str(dog_age) + " años en años de perro"
+  return text
 
 print('Año Perruno: ', dog_years('Lima', 8))
 
